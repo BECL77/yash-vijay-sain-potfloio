@@ -8,23 +8,14 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-editor-dark">
-      {/* Background Video */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
-        <video 
+        <img 
+          src="/lovable-uploads/7d98d1c2-7db3-47d5-95c7-fc8a2c02a55a.png" 
+          alt="Video Editing Background" 
           className="w-full h-full object-cover" 
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-          poster="https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
-        >
-          <source 
-            src="https://static.videezy.com/system/resources/previews/000/047/745/original/alb4k0009.mp4" 
-            type="video/mp4" 
-          />
-          Your browser does not support the video tag.
-        </video>
+        />
       </div>
 
       {/* Content */}
@@ -41,7 +32,7 @@ const HeroSection = () => {
             <Dialog>
               <DialogTrigger asChild>
                 <button 
-                  className="flex items-center bg-editor-red hover:bg-editor-red/90 text-white font-bold py-3 px-6 rounded-md transition-all group"
+                  className="flex items-center bg-editor-purple hover:bg-editor-purple/90 text-white font-bold py-3 px-6 rounded-md transition-all group"
                   onClick={() => setIsVideoPlaying(true)}
                 >
                   <Play className="mr-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
