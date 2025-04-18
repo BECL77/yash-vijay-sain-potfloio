@@ -10,9 +10,9 @@ const HeroSection = () => {
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-editor-dark">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/30 z-10"></div>
+        <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
-          src="/lovable-uploads/7d98d1c2-7db3-47d5-95c7-fc8a2c02a55a.png" 
+          src="/lovable-uploads/dbae5801-5caf-4a36-9fdb-cbc10681a56b.png" 
           alt="Video Editing Background" 
           className="w-full h-full object-cover opacity-90" 
         />
@@ -79,4 +79,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
