@@ -57,11 +57,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				editor: {
-					'red': '#FF2D55',
-					'blue': '#007AFF',
-					'purple': '#8B5CF6',
-					'dark': '#111111',
-					'light': '#FFFFFF'
+					'red': '#8B5CF6',     // Soft purple replaces the original red
+					'blue': '#6366F1',     // Indigo for a more muted primary color
+					'purple': '#A78BFA',   // Lighter purple for secondary accents
+					'dark': '#1A202C',     // Deep dark blue-gray for dark backgrounds
+					'light': '#F7FAFC'     // Light grayish background
 				}
 			},
 			borderRadius: {
