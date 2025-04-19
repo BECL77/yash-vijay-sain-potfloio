@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
           src="/lovable-uploads/dbae5801-5caf-4a36-9fdb-cbc10681a56b.png" 
-          alt="Video Editing Background" 
+          alt="Software Engineer Background" 
           className="w-full h-full object-cover opacity-90" 
         />
       </div>
@@ -22,45 +22,16 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-6 z-10 relative text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 animate-fade-in">
-            Crafting Stories Through Editing
+            Yash Vijay Sain
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-10 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Video Editor • Colorist • Motion Designer
+            Software Engineer • Full Stack Developer
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <Dialog>
-              <DialogTrigger asChild>
-                <button 
-                  className="flex items-center bg-editor-purple hover:bg-editor-purple/90 text-white font-bold py-3 px-6 rounded-md transition-all group"
-                  onClick={() => setIsVideoPlaying(true)}
-                >
-                  <Play className="mr-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  Watch Showreel
-                </button>
-              </DialogTrigger>
-              <DialogContent className="max-w-5xl w-[90vw] h-[80vh] p-0 bg-transparent border-none shadow-none">
-                <div className="relative w-full h-full pt-[56.25%]">
-                  {isVideoPlaying && (
-                    <iframe
-                      className="absolute top-0 left-0 w-full h-full"
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                      title="Showreel"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  )}
-                </div>
-              </DialogContent>
-            </Dialog>
-
-            <a 
-              href="/#portfolio" 
-              className="flex items-center bg-transparent text-white border border-white/30 hover:border-white font-bold py-3 px-6 rounded-md transition-all hover:bg-white/10"
-            >
-              View Portfolio
-            </a>
+            <div className="text-white/80 max-w-xl mx-auto">
+              Skills: Adobe Photoshop, Node.js, Python, C++, Canva, MongoDB, React, MySQL, JavaScript, HTML
+            </div>
           </div>
         </div>
       </div>
