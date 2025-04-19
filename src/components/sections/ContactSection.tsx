@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
@@ -27,10 +28,10 @@ const ContactSection = () => {
     setIsSubmitting(true);
     
     try {
-      // Insert submission to Supabase
+      // Insert submission to Supabase using the properly typed table name
       const { error } = await supabase
         .from('contact_submissions')
-        .insert([formData]);
+        .insert(formData);
 
       if (error) {
         throw error;
