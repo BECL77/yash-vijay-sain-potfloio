@@ -1,15 +1,15 @@
 
-import { Camera, Film, Play, Award, Edit, Monitor } from 'lucide-react';
+import { Code, Database, Terminal, Laptop, Server, Award } from 'lucide-react';
 import { SectionHeading } from "@/components/ui/section-heading";
 
 const AboutSection = () => {
   const skills = [
-    { name: 'Video Editing', icon: Edit, value: 95 },
-    { name: 'Color Grading', icon: Monitor, value: 90 },
-    { name: 'Motion Graphics', icon: Play, value: 85 },
-    { name: 'Sound Design', icon: Film, value: 80 },
-    { name: 'Cinematography', icon: Camera, value: 75 },
-    { name: 'Creative Direction', icon: Award, value: 85 },
+    { name: 'Frontend Development', icon: Code, value: 95 },
+    { name: 'Backend Development', icon: Server, value: 90 },
+    { name: 'Database Management', icon: Database, value: 85 },
+    { name: 'UI/UX Design', icon: Laptop, value: 80 },
+    { name: 'DevOps', icon: Terminal, value: 75 },
+    { name: 'Problem Solving', icon: Award, value: 90 },
   ];
 
   return (
@@ -20,8 +20,8 @@ const AboutSection = () => {
           <div className="order-2 lg:order-1 relative">
             <div className="aspect-[3/4] rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
-                alt="Ajay Saini Video Editor" 
+                src="/lovable-uploads/dbae5801-5caf-4a36-9fdb-cbc10681a56b.png" 
+                alt="Yash Vijay Sain - Software Engineer" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -36,25 +36,25 @@ const AboutSection = () => {
             <div className="space-y-6">
               <SectionHeading
                 title="About"
-                highlight="Ajay Saini"
+                highlight="Yash Vijay Sain"
                 centered={false}
                 className="mb-6"
               />
               
               <p className="text-lg text-gray-700">
-                I'm a passionate video editor with over 5 years of professional experience crafting compelling visual stories. My journey in post-production has allowed me to work with brands, filmmakers, and content creators to bring their vision to life.
+                I'm a passionate software engineer with expertise in full-stack development. My journey in software development has allowed me to work with various technologies and create impactful solutions.
               </p>
               
               <p className="text-gray-700">
-                Specializing in commercial, narrative, and documentary editing, I pride myself on attention to detail and an intuitive understanding of pacing and emotion. My goal is always to enhance the story through thoughtful editing choices that resonate with viewers.
+                Specializing in web development, I excel in both frontend and backend technologies. My goal is to create efficient, scalable, and user-friendly applications that solve real-world problems.
               </p>
               
               <p className="text-gray-700">
-                I work primarily with Adobe Premiere Pro, After Effects, and DaVinci Resolve, constantly honing my skills to stay at the forefront of industry trends and techniques.
+                I work with a diverse tech stack including React, Node.js, Python, C++, and various databases. I'm also proficient in design tools like Adobe Photoshop and Canva for creating engaging user interfaces.
               </p>
               
               <div className="mt-8">
-                <h3 className="text-xl font-bold mb-6">My Skills</h3>
+                <h3 className="text-xl font-bold mb-6">Technical Skills</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
                   {skills.map((skill) => (
                     <div key={skill.name}>

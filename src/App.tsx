@@ -12,7 +12,7 @@ const queryClient = new QueryClient();
 const App = () => {
   useEffect(() => {
     // Set page title
-    document.title = "Ajay Saini | Professional Video Editor";
+    document.title = "Yash Vijay Sain | Software Engineer";
   }, []);
 
   return (

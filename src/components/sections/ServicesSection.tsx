@@ -1,44 +1,44 @@
 
-import { Film, Paintbrush, Music, Share, Sparkles, Volume2 } from 'lucide-react';
+import { Code, Database, Server, Laptop, Terminal, Pencil } from 'lucide-react';
 import { SectionHeading } from "@/components/ui/section-heading";
 
 const ServicesSection = () => {
   const services = [
     {
-      title: "Video Editing",
-      icon: Film,
-      description: "Professional editing for commercials, documentaries, interviews, and narrative content with smooth transitions and perfect pacing.",
-      price: "$50-100/hour"
+      title: "Full Stack Development",
+      icon: Code,
+      description: "End-to-end web application development using modern technologies like React, Node.js, and MongoDB.",
+      price: "From $50/hour"
     },
     {
-      title: "Color Grading",
-      icon: Paintbrush,
-      description: "Advanced color correction and grading to enhance mood, create visual consistency, and achieve the perfect cinematic look.",
-      price: "$75-120/hour"
+      title: "Database Design",
+      icon: Database,
+      description: "Efficient database architecture and implementation using MySQL, MongoDB, and other database systems.",
+      price: "From $45/hour"
     },
     {
-      title: "Motion Graphics",
-      icon: Sparkles,
-      description: "Eye-catching motion graphics, titles, and visual effects to elevate your video content with dynamic elements.",
-      price: "$85-130/hour"
+      title: "Backend Development",
+      icon: Server,
+      description: "Robust server-side solutions with Node.js, Python, and related technologies for scalable applications.",
+      price: "From $55/hour"
     },
     {
-      title: "Sound Design",
-      icon: Volume2,
-      description: "Expert audio mixing, sound effects, and audio restoration to ensure your video sounds as good as it looks.",
-      price: "$60-90/hour"
+      title: "Frontend Development",
+      icon: Laptop,
+      description: "Creating responsive and interactive user interfaces using React, JavaScript, HTML, and modern CSS.",
+      price: "From $45/hour"
     },
     {
-      title: "Social Media Content",
-      icon: Share,
-      description: "Specialized editing for social media platforms with optimized formats, attention-grabbing hooks, and platform-specific requirements.",
-      price: "$45-85/hour"
+      title: "API Development",
+      icon: Terminal,
+      description: "Design and implementation of RESTful APIs and microservices architecture.",
+      price: "From $50/hour"
     },
     {
-      title: "Music Video Editing",
-      icon: Music,
-      description: "Rhythm-driven editing for music videos with creative transitions and visual storytelling that complements the music.",
-      price: "$70-110/hour"
+      title: "UI/UX Design",
+      icon: Pencil,
+      description: "Creating user-friendly interfaces using Adobe Photoshop, Canva, and other design tools.",
+      price: "From $40/hour"
     },
   ];
 
@@ -48,7 +48,7 @@ const ServicesSection = () => {
         <SectionHeading
           title="Services"
           highlight="Offered"
-          description="Professional video editing services tailored to your specific needs. From basic cuts to complex visual storytelling, I bring your vision to life."
+          description="Professional software development services tailored to your specific needs. From full-stack development to UI/UX design, I bring your digital vision to life."
         />
         
         {/* Services Grid */}
@@ -62,9 +62,9 @@ const ServicesSection = () => {
         <div className="mt-16 bg-editor-dark text-white p-8 rounded-lg shadow-lg">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Need a custom package?</h3>
+              <h3 className="text-2xl font-bold mb-2">Need a custom solution?</h3>
               <p className="text-white/80">
-                Contact me to discuss your specific project requirements and get a personalized quote.
+                Contact me to discuss your project requirements and get a personalized quote.
               </p>
             </div>
             <a 

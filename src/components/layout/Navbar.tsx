@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from 'react';
-import { Menu, X, Film } from 'lucide-react';
+import { Menu, X, Film, Code } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -39,8 +38,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Film className="h-6 w-6 text-editor-red" />
-            <span className="font-heading font-bold text-xl">Ajay Saini</span>
+            <Code className="h-6 w-6 text-editor-red" />
+            <span className="font-heading font-bold text-xl">Yash Vijay Sain</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,5 +1,4 @@
-
-import { Instagram, Youtube, Linkedin, Mail, Film } from 'lucide-react';
+import { Instagram, Youtube, Linkedin, Mail, Code } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,8 +9,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-center mb-12">
           <div className="flex items-center space-x-2">
-            <Film className="h-8 w-8 text-editor-red" />
-            <span className="font-heading font-bold text-3xl">Ajay Saini</span>
+            <Code className="h-8 w-8 text-editor-red" />
+            <span className="font-heading font-bold text-3xl">Yash Vijay Sain</span>
           </div>
         </div>
         
@@ -20,7 +19,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">About Me</h3>
             <p className="text-white/80 mb-4">
-              Professional video editor with 5+ years of experience, crafting compelling visual stories with precision and creativity.
+              Professional software engineer with expertise in full-stack development, creating efficient and scalable solutions with modern technologies.
             </p>
             <div className="flex space-x-4">
               <a 
