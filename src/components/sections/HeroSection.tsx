@@ -1,20 +1,15 @@
 
-import { Play } from 'lucide-react';
-import { useState } from 'react';
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { LazyVideo } from '@/components/ui/lazy-video';
 
 const HeroSection = () => {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-editor-dark">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
-        <img 
-          src="/lovable-uploads/dbae5801-5caf-4a36-9fdb-cbc10681a56b.png" 
-          alt="Software Engineer Background" 
-          className="w-full h-full object-cover opacity-90" 
+        <LazyVideo 
+          src="https://v21-kling.klingai.com/bs2/upload-ylab-stunt-sgp/kling/u4jiEETXe0VXu5cQcAt0IA/Standard_Mode_in_this_image_that_the_monitor_a.mp4"
+          className="w-full h-full object-cover"
         />
       </div>
 
