@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Film, Code } from 'lucide-react';
+import { Menu, X, Film } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -36,13 +36,14 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Code className="h-6 w-6 text-editor-red" />
-            <span className="font-heading font-bold text-xl">Yash Vijay Sain</span>
+            <img
+              src="/lovable-uploads/4689be72-b857-4bf0-ac74-a16cb716f54b.png"
+              alt="YVS Logo"
+              className="h-10 w-auto object-contain"
+            />
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">
             {navLinks.map((link) => (
               <a key={link.name} href={link.path} className="nav-link">
@@ -57,7 +58,6 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Mobile Navigation Toggle */}
           <button 
             className="md:hidden p-2 rounded-md text-foreground" 
             onClick={() => setIsOpen(!isOpen)}
@@ -67,7 +67,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md shadow-lg border-t animate-fade-in">
           <div className="container mx-auto px-4 py-4">
